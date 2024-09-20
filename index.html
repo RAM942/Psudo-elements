@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu Card</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+  }
+  
+  .menu-card {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color:aquamarine;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h1:hover{
+    color: blue;
+    text-decoration: underline;
+    font-size: 40px;
+    background-color: wheat;
+    border-radius: 50%;
+  }
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  h2:hover{
+    color:green;
+    text-decoration: line-through;
+    font-size: 30px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  li::before {
+    content: "\2022"; /* Bullet point character */
+
+    display: inline-block;
+    margin-right: 10px;
+    color: #1c1fe9;
+
+  }
+  
+  li:hover {
+    background-color:whitesmoke;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 20px;
+    color:red;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: underline;
+  }
+  </style>
+</head>
+<body>
+  <div class="menu-card">
+    <h1>Our Delicious Menu</h1>
+    <section class="appetizers">
+      <h2>Appetizers</h2>
+      <ul>
+        <li>Bruschetta (Tomato, Basil, Olive Oil)</li>
+        <li>Garlic Bread</li>
+        <li>Chicken Wings (BBQ or Buffalo)</li>
+      </ul>
+    </section>
+    <section class="main-courses">
+      <h2>Main Courses</h2>
+      <ul>
+        <li>Margherita Pizza</li>
+        <li>Spaghetti Carbonara</li>
+        <li>Grilled Salmon with Asparagus</li>
+      </ul>
+    </section>
+    <section class="desserts">
+      <h2>Desserts</h2>
+      <ul>
+        <li>Tiramisu</li>
+        <li>Chocolate Lava Cake</li>
+        <li>Apple Crumble</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
